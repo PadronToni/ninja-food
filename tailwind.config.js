@@ -7,7 +7,10 @@ module.exports = {
         sm: '480px'
       },
       colors: {
-        primary: '#ff6363',
+        primary: {
+          light: '#ff7a7a',
+          DEFAULT: '#ff6363'
+        },
         secondary: {
           '100': '#e2e2d5',
           '200': '#888883'
