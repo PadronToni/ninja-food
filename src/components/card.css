@@ -1,5 +1,5 @@
 .card {
-	@apply relative rounded-lg overflow-hidden bg-white shadow-md;
+	@apply relative rounded-lg overflow-hidden bg-white shadow;
 }
 .card .badge {
 	@apply absolute top-0 m-3 px-2 py-1 bg-secondary-100 text-secondary-200 rounded-full;
