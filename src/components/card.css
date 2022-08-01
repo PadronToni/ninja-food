@@ -1,8 +1,17 @@
-@layer components {
-	.card {
-		@apply relative rounded-lg overflow-hidden bg-white shadow;
-	}
-	.card .badge {
-		@apply absolute top-0 m-3 px-2 py-1 bg-secondary-100 text-secondary-200 rounded-full text-sm md:text-base;
-	}
+.card {
+	@apply relative rounded-lg overflow-hidden bg-white shadow;
+}
+.card .badge {
+	@apply absolute top-0
+		flex items-center gap-1
+		m-3 px-2 py-1 
+		bg-secondary-100 text-secondary-200 rounded-full
+		text-sm md:text-base;
+}
+.card .badge::before {
+	content: "\e8b5";
+	font-family: "Material Icons Outlined";
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
 }

@@ -1,10 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
 /* Fonts */
+
+/* Material icons */
 
 /* Elements */
 
 /* Components */
+
+.card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card .badge{
+  position: absolute;
+  top: 0px;
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 226 213 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(136 136 131 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .card .badge{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.card .badge::before {
+  content: "\e8b5";
+  font-family: "Material Icons Outlined";
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+}
 
 /* Tailwind */
 
@@ -625,41 +675,6 @@ button.primary-outline:hover,
   --tw-backdrop-sepia:  ;
 }
 
-.card{
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.card .badge{
-  position: absolute;
-  top: 0px;
-  margin: 0.75rem;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 226 213 / var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(136 136 131 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px){
-  .card .badge{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 .sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -671,6 +686,10 @@ button.primary-outline:hover,
 
 .m-3{
   margin: 0.75rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
 }
 
 .mt-12{
@@ -703,6 +722,10 @@ button.primary-outline:hover,
 
 .max-w-6xl{
   max-width: 72rem;
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-center{
@@ -753,6 +776,10 @@ button.primary-outline:hover,
 
 .p-4{
   padding: 1rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-8{
@@ -813,6 +840,10 @@ button.primary-outline:hover,
 .text-secondary-200{
   --tw-text-opacity: 1;
   color: rgb(136 136 131 / var(--tw-text-opacity));
+}
+
+.material-icons {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 48;
 }
 
 @media (min-width: 480px){
