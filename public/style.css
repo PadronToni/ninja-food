@@ -712,6 +712,10 @@ button.primary-outline:hover,
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-32{
   height: 8rem;
 }
@@ -724,6 +728,10 @@ button.primary-outline:hover,
   max-width: 72rem;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .items-center{
   align-items: center;
 }
@@ -734,6 +742,10 @@ button.primary-outline:hover,
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-2{
@@ -943,6 +955,14 @@ button.primary-outline:hover,
 
   .md\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:grid-cols-3{
